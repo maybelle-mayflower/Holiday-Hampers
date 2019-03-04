@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 14, 2017, 4:50:28 PM
+    Author     : TOCHI
+*/
+
+body{
+	margin:0 auto;
+	padding:0;
+	background:#fff;
+	font-family: 'Noto Sans', sans-serif;
+ }
+ .main_area{
+     margin:0 auto;
+     background: white;
+     height: auto;
+     width: 100%;
+     position: relative;
+ }
+ @media only screen and (max-width: 479px)
+ {
+     .main_area{width: 90%;}
+ }
+ .categories{
+     height: 70px;
+     width: 100%;
+     background: #DBDBDB;
+     border: solid 10px;
+     border-color: white;
+     align-content: center;
+     border-radius: 2em;
+ }
+ .accordion_image{
+     width: 90%;
+ }
+ #cat1{
+     margin-top: 25px;
+ }
+ #cat1 li{
+     list-style: none;
+     display: inline;
+     border: 2px solid #FDDD7E;
+     text-align: center;
+ }
+ .menu_left{
+     float: left;
+     background: #DBDBDB;
+     height: 900px;
+     Width: 250px;
+     border: solid 10px;
+     border-top: 0;
+     border-color: white;
+     border-radius: 2em;
+ }
+ .menu_right{
+     float: right;
+     background: #DBDBDB;
+     height: 100%;
+     Width: 30%;
+     border: solid 10px;
+     border-top: 0;
+     border-color: white;
+     border-radius: 2em;
+ }
+ .middle{
+     height: 900px;
+     width: 70%;
+     background: #DBDBDB;
+     border-bottom: solid 10px;
+     border-bottom-color: white;
+     border-left: solid 10px;
+     border-left-color: white;
+     border-radius: 2em;
+ }
+ li.p.in_paraI{
+    color: #B3B3B3;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin: 1em 0 ;
+ }
+ .cat-btn{
+     border: solid 1px black;
+ }
+ 

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Hampers - Merchant's Portal</title>
+  <link rel="stylesheet" href="assets/css/vendor.bundle.css">
+  <link rel="stylesheet" href="assets/css/app.bundle.css">
+  <link rel="stylesheet" href="assets/css/theme-a.css">
+</head>
+<body>
+  <div id="app_wrapper">
+    <header id="app_topnavbar-wrapper">
+      <nav role="navigation" class="navbar topnavbar">
+        <div class="nav-wrapper">
+          <ul class="nav navbar-nav pull-left left-menu">
+            <li class="app_menu-open">
+              <a href="javascript:void(0)" data-toggle-state="app_sidebar-left-open" data-key="leftSideBar">
+                <i class="zmdi zmdi-menu"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav left-menu hidden-xs">
+            <li>
+              <a href="javascript:void(0)" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li> 
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown avatar-menu">
+              <a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
+                <span class="meta">
+                  <span class="avatar">
+                    <img src="assets/img/profiles/02.jpg" alt="" class="img-circle max-w-35">
+                    <i class="badge mini success status"></i>
+                  </span>
+                  <span class="name">Maybelle Mem-Otaji</span>
+                  <span class="caret"></span>
+                </span>
+              </a>
+              <ul class="dropdown-menu btn-primary dropdown-menu-right">
+                <li>
+                  <a href="page-profile.html"><i class="zmdi zmdi-account"></i> Profile</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="zmdi zmdi-settings"></i> Account Settings</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="zmdi zmdi-sign-in"></i> Sign Out</a>
+                </li>
+              </ul>
+            </li>
+            <li class="select-menu hidden-xs hidden-sm">
+              <select class="select form-control country" style="display:none">
+                <option option="EN">English</option>
+                <option option="ES">Español</option>
+                <option option="FN"> Français</option>
+                <option option="IT">Italiano</option>
+              </select>
+            </li>
+            <li>
+              <a href="javascript:void(0)" data-navsearch-open>
+                <i class="zmdi zmdi-search"></i>
+              </a>
+            </li>
+            <li class="dropdown hidden-xs hidden-sm">
+              <a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
+                <span class="badge mini status danger"></span>
+                <i class="zmdi zmdi-notifications"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-lg-menu dropdown-menu-right dropdown-alt">
+                <li class="dropdown-menu-header">
+                  <ul class="card-actions icons  left-top">
+                    <li class="withoutripple">
+                      <a href="javascript:void(0)" class="withoutripple">
+                        <i class="zmdi zmdi-settings"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5>NOTIFICATIONS</h5>
+                  <ul class="card-actions icons right-top">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <i class="zmdi zmdi-check-all"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="card">
+                    <a href="javascript:void(0)" class="pull-right dismiss" data-dismiss="close">
+                      <i class="zmdi zmdi-close"></i>
+                    </a>
+                    <div class="card-body">
+                      <ul class="list-group ">
+                        <li class="list-group-item ">
+                          <span class="pull-left"><img src="assets/img/profiles/11.jpg" alt="" class="img-circle max-w-40 m-r-10 "></span>
+                          <div class="list-group-item-body">
+                            <div class="list-group-item-heading">Notification Title</div>
+                            <div class="list-group-item-text">Notification body</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+               
+                <li class="dropdown-menu-footer">
+                  <a href="javascript:void(0)">
+                    All notifications
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="last">
+              <a href="javascript:void(0)" data-toggle-state="sidebar-overlay-open" data-key="rightSideBar">
+                <i class="mdi mdi-playlist-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form role="search" action="" class="navbar-form" id="navbar_form">
+          <div class="form-group">
+            <input type="text" placeholder="Search and press enter..." class="form-control" id="navbar_search" autocomplete="off">
+            <i data-navsearch-close class="zmdi zmdi-close close-search"></i>
+          </div>
+          <button type="submit" class="hidden btn btn-default">Submit</button>
+        </form>
+      </nav>
+    </header>
+
+    <aside id="app_sidebar-left">
+      <div id="logo_wrapper">
+        <ul>
+          <li class="logo-icon">
+            <a href="index.html">
+              <div class="logo">
+                <img src="assets/img/logo/logo-icon.png" alt="Logo">
+              </div>
+              <h1 class="brand-text"></h1>
+            </a>
+          </li>
+          <li class="menu-icon">
+            <a href="javascript:void(0)" role="button" data-toggle-state="app_sidebar-menu-collapsed" data-key="leftSideBar">
+              <i class="mdi mdi-backburger"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav id="app_main-menu-wrapper" class="fadeInLeft scrollbar">
+        <div class="sidebar-inner sidebar-push">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="sidebar-header">NAVIGATION</li>
+            <li><a href="index.html"><i class="zmdi zmdi-view-dashboard"></i>Dashboard</a></li>
+            <li class="sidebar-header">APP VIEWS</li>
+            <li class="nav-dropdown active open"><a href="#"><i class="zmdi zmdi-shopping-cart"></i>Your Store</a>
+              <ul class="nav-sub">
+                <li class="active"><a href="index.html">Overview</a></li>
+                <li><a href="ecom-products.php">Products</a></li>
+                
+                <li><a href="ecommerce-customers.html">Customers</a></li>
+                <li><a href="ecommerce-settings.html">Settings</a></li>
+              </ul>
+            </li>
+            <li><a href="page-profile.html"><i class="zmdi zmdi-account"></i>Profile</a></li>
+            <li><a href="app-file-manager.html"><i class="zmdi zmdi-folder"></i>File Manager</a></li>
+            <li><a href="app-taskboard.html"><i class="zmdi zmdi-view-column"></i>Taskboard</a></li>
+            
+            <li class="sidebar-header">Your Account</li>
+            
+            <li><a href="page-invoice.html"><i class="zmdi zmdi-money"></i>Invoice</a></li>
+          <li class="nav-dropdown"><a href="#"><i class="zmdi zmdi-lock"></i>Authentication</a>
+  <ul class="nav-sub">
+    <li><a href="login.html">Login &amp; Register</a></li>
+    
+    
+    <li><a href="lock-screen.html">Lock Screen</a></li>
+  </ul>
+</li>
+<li><a href="index.html"><i class="zmdi zmdi-view-web"></i>Front-end</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <section id="content_outer_wrapper">
+        <div id="content_wrapper" class="card-overlay">
+          <div id="header_wrapper" class="header-lg overlay ecom-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <header id="header">
+                    <h1>Welcome back, Maybelle.</h1>
+                    <small>Here’s what’s happening with your store right now.</small>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content" class="container">
+            <div class="content-body">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="card sales-card">
+                  <header class="card-heading ">
+                    <h2 class="card-title">Today’s sales goal</h2>
+                    <ul class="card-actions icons right-top">
+                      <li>
+                        <a href="javascript:void(0)" data-toggle="refresh">
+                          <i class="zmdi zmdi-refresh-alt"></i>
+                        </a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown">
+                          <i class="zmdi zmdi-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu btn-primary dropdown-menu-right">
+                          <li>
+                            <a href="javascript:void(0)">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 30 Days</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <div class="card-body totalSales">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div id="totalSales" class="progressBar"></div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2 class="timer money" data-from="0" data-to="6200" data-speed="1000" data-refresh-interval="50"></h2>
+                        <span class="timer orders block" data-from="0" data-to="190" data-speed="1000" data-refresh-interval="50"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card sales-card">
+                  <header class="card-heading ">
+                    <h2 class="card-title">Today’s New Signups</h2>
+                    <ul class="card-actions icons right-top">
+                      <li>
+                        <a href="javascript:void(0)" data-toggle="refresh">
+                          <i class="zmdi zmdi-refresh-alt"></i>
+                        </a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown">
+                          <i class="zmdi zmdi-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu btn-primary dropdown-menu-right">
+                          <li>
+                            <a href="javascript:void(0)">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 30 Days</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <div class="card-body newSignups">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div id="newSignups" class="progressBar"></div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2 class="timer" data-from="0" data-to="420" data-speed="1000" data-refresh-interval="50"></h2>
+                        <span class="timer users block" data-from="0" data-to="967" data-speed="1000" data-refresh-interval="50"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8">
+                <div class="card p-b-10">
+                  <header class="card-heading ">
+                    <h2 class="card-title">Today's Conversion Statistics</h2>
+                    <ul class="card-actions icons right-top">
+                      <li>
+                        <a href="javascript:void(0)" data-toggle-expand="content-expanded" data-key="contentExpand">
+                          <i class="zmdi zmdi-fullscreen"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" data-toggle="refresh">
+                          <i class="zmdi zmdi-refresh-alt"></i>
+                        </a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown">
+                          <i class="zmdi zmdi-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu btn-primary dropdown-menu-right">
+                          <li>
+                            <a href="javascript:void(0)">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Last 30 Days</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <div class="card-body">
+                    <ul class="summary">
+                      <li><span class="block m-b-5">Added to cart</span>
+                        <h2 class="timer percent" data-from="0" data-to="38" data-speed="1000" data-refresh-interval="50"></h2>
+                      </li>
+                      <li><span class="block m-b-5">Reached checkout</span>
+                        <h2 class="timer percent" data-from="0" data-to="32" data-speed="1000" data-refresh-interval="50"></h2>
+                      </li>
+                      <li><span class="block m-b-5">Purchased</span>
+                        <h2 class="timer percent" data-from="0" data-to="17" data-speed="1000" data-refresh-interval="50"></h2>
+                      </li>
+                      <li><span class="block m-b-5">Cancelled</span>
+                        <h2 class="timer percent" data-from="0" data-to="3" data-speed="1000" data-refresh-interval="50"></h2>
+                      </li>
+                    </ul>
+                  </div>
+                  <canvas id="conversionStats" width="1200" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="card">
+                  <header class="card-heading ">
+                    <h2 class="card-title">Payments Received</h2>
+                    <ul class="card-actions icons right-top">
+                      <li>
+                        <a href="javascript:void(0)" data-toggle="refresh">
+                          <i class="zmdi zmdi-refresh-alt"></i>
+                        </a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown">
+                          <i class="zmdi zmdi-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu btn-primary dropdown-menu-right">
+                          <li>
+                            <a href="javascript:void(0)">Option One</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Option Two</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">Option Three</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <div class="card-body">
+                    <canvas id="salesStats" width="1200" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <footer id="footer_wrapper">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <h6>Want to Work with Us?</h6>
+              <p>Paleo flexitarian bushwick letterpress, ea migas yr adipisicing. Man bun tacos tumblr kombucha, yuccie banjo affogato dolore gentrify retro chartreuse. Anim austin tempor ethical, sapiente food truck fanny pack farm-to-table.
+                Culpa keytar esse tilde hoodie, art party nostrud messenger bag authentic helvetica kinfolk cred eu affogato forage.</p>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <h6>Company</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">About Us </a></li>
+                  <li><a href="javascript:void(0)">Careers</a></li>
+                  <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                  <li><a href="javascript:void(0)">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <h6>Email Newsletters</h6>
+                <p>Sign up for new MaterialWrap content, updates, and offers.</p>
+                <div class="form-group is-empty">
+                  <div class="input-group">
+                    <label class="control-label sr-only" for="footerEmail">Email Address</label>
+                    <input type="email" class="form-control" id="footerEmail" placeholder="Enter your email address...">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-white btn-fab animate-fab btn-fab-sm">
+                        <i class="zmdi zmdi-mail-send"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row copy-wrapper">
+              <div class="col-xs-8">
+                <p class="copy">&copy; Copyright <time class="year"></time> MaterialWrap - All Rights Reserved</p>
+              </div>
+              <div class="col-xs-4">
+                <ul class="social">
+                  <li>
+                    <a href="javascript:void(0)"> </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"> </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"> </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        </section>
+        <aside id="app_sidebar-right">
+          <div class="sidebar-inner sidebar-overlay">
+            <div class="tabpanel">
+              <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"><a href="#sidebar_activity" data-toggle="tab">Activity</a></li>
+                <li role="presentation"><a href="#sidebar_settings" data-toggle="tab">Settings</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <script src="assets/js/vendor.bundle.js"></script>
+      <script src="assets/js/app.bundle.js"></script>
+    </body>
+    </html>
